@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>File Name Validator</title>
+<script src="add.js"></script>
+<script src="/scripts/snippet-javascript-console.min.js?v=1"></script>
+<style>
+body {
+  margin: 0;
+  min-width: 250px;
+align:center;
+}
+
+
+
+
+/* Style the header */
+.header {
+  background-color: DodgerBlue;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+
+
+/* Style the input */
+#myInput {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 30%;
+  padding: 10px;
+  float: center;
+  font-size: 16px;
+}
+
+
+
+
+
+::placeholder {
+  color: red;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12-18 */
+  color: red;
+}
+#Center{
+	width : 100%;
+	margin: auto;
+}
+</style>
+</head>
+<body align="center">
+<div id="Center">
+<h1>File Name Validator</h1>
+<br>
+<br>
+<div>
+<p>
+	Source File:	<input type="file" id="fileinput1" multiple  onchange="GetFileSizeNameAndType()">
+</p>
+
+</div>
+<div id="fp"></div>
+<p>
+<div id="divTotalSize"></div>
+</p>
+<hr>
+<br>
+<br>
+<p>
+
+	Tag File:	<input type="file" id="fileinput2" multiple onchange="GetFileSizeNameAndType1()">
+</p>
+<div id="fp1"></div>
+<p>
+<div id="divTotalSize1"></div>
+</p>
+<hr>
+<br>
+<br>
+<div id="fp2"></div>
+<p></p>
+
+<button type="button" onclick="validate()">Validate File</button>
+</div>
+<div align="center">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<label for=sfilename">Source File:</label>
+<input type="text" id="sfilename" name="sfilename" placeholder="Please Enter Source File Name" onkeyup='check();'>
+<br><span id='messages'></span
+<br><br><br>&nbsp;&nbsp;&nbsp;
+<label for=tfilename">Tag File:</label>
+<input type="text" id="tfilename" name="tfilename" placeholder="Please Enter Tag File Name" onkeyup='check();'>
+<br><span id='messaget'></span
+<br>
+<br>
+ <span id='message'>Please Enter Files Name</span>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<body>
+</html>
